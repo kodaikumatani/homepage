@@ -339,6 +339,20 @@ p { margin: 0 0 1.2em; }
   transition: transform .25s ease, color .25s ease;
 }
 
+/* リンク先が非公開のカード（リンクにしない） */
+.work--private { cursor: default; }
+.work--private:hover { transform: none; border-color: var(--border); }
+.work--private:hover::before { opacity: 0; }
+
+.work__note {
+  position: absolute;
+  right: 28px;
+  bottom: 30px;
+  color: var(--text-muted);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
 /* ---------- contact ---------- */
 
 .contact__lead {
