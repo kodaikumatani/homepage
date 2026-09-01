@@ -1,0 +1,36 @@
+name: Deploy
+
+# main が更新されたら本番サイトを gh-pages ブランチのルートへ配信する。
+# pr-preview/ 配下は PR プレビュー用なので消さない。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stage site files
+        run: |
+          mkdir -p _site
+          rsync -a index.html css js images .nojekyll _site/
+
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: _site
+          clean: true
+          clean-exclude: pr-preview/
+          commit-message: "Deploy ${{ github.sha }}"
