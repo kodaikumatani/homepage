@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kodai Kumatani — Backend / Infrastructure Engineer</title>
+<meta name="description" content="バックエンドとインフラを中心に、Go・gRPC・Kubernetes を使ったシステム開発を行っています。">
+<meta property="og:title" content="Kodai Kumatani">
+<meta property="og:description" content="バックエンドとインフラを中心に、Go・gRPC・Kubernetes を使ったシステム開発を行っています。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#hero">KK<span class="logo__dot">.</span></a>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <p class="hero__eyebrow reveal">Backend / Infrastructure Engineer</p>
+      <h1 class="hero__title reveal">
+        動くものを、<br>
+        <span class="hero__accent">動き続ける</span>ものにする。
+      </h1>
+      <p class="hero__lead reveal">
+        Go と gRPC でのサーバー開発から、Kubernetes による自宅ラボの運用まで。
+        設計・実装・運用をひと続きのものとして扱うことを大事にしています。
+      </p>
+      <div class="hero__actions reveal">
+        <a class="btn btn--primary" href="#works">制作物を見る</a>
+        <a class="btn btn--ghost" href="#contact">お問い合わせ</a>
+      </div>
+    </div>
+    <div class="hero__glow" aria-hidden="true"></div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section__label reveal">About</p>
+      <h2 class="section__title reveal">つくることと、支えること</h2>
+      <div class="about">
+        <div class="about__body reveal">
+          <p>
+            バックエンドとインフラを主な領域とするエンジニアです。
+            アプリケーションコードだけでなく、その下で動くネットワークやコンテナ基盤まで触れることで、
+            障害の原因を一箇所に閉じ込めずに追えるようにしています。
+          </p>
+          <p>
+            最近は Go / gRPC を用いたサーバー実装と、Kubernetes を用いた自宅ラボの構成管理を中心に手を動かしています。
+            手元で一度ぜんぶ組み立ててみることが、いちばん理解が早いと思っています。
+          </p>
+        </div>
+        <ul class="about__facts reveal">
+          <li>
+            <span class="about__key">Focus</span>
+            <span class="about__val">Backend / Infrastructure</span>
+          </li>
+          <li>
+            <span class="about__key">Main Stack</span>
+            <span class="about__val">Go, gRPC, Kubernetes</span>
+          </li>
+          <li>
+            <span class="about__key">Interest</span>
+            <span class="about__val">分散システム, IaC, 可観測性</span>
+          </li>
+          <li>
+            <span class="about__key">Location</span>
+            <span class="about__val">Japan</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <p class="section__label reveal">Skills</p>
+      <h2 class="section__title reveal">できること</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">&lt;/&gt;</div>
+          <h3 class="card__title">サーバーサイド開発</h3>
+          <p class="card__text">
+            Go を中心に、gRPC / REST での API 実装。認証やストリーミングを含む通信設計と、
+            CQRS のようなレイヤ構成の設計。
+          </p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">&#9723;</div>
+          <h3 class="card__title">インフラ / 基盤構築</h3>
+          <p class="card__text">
+            Kubernetes によるコンテナ基盤の構築と運用。宣言的な構成管理と、
+            再現可能な環境づくり。
+          </p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">&#9737;</div>
+          <h3 class="card__title">フロントエンド</h3>
+          <p class="card__text">
+            静的サイトから Next.js まで。派手さよりも、読みやすさと崩れない構造を優先した実装。
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="works">
+    <div class="container">
+      <p class="section__label reveal">Works</p>
+      <h2 class="section__title reveal">制作物</h2>
+      <div class="works">
+        <a class="work reveal" href="#" >
+          <span class="work__tag">Go / gRPC</span>
+          <h3 class="work__title">gRPC CQRS Server</h3>
+          <p class="work__text">コマンドとクエリを分離した構成で組んだ gRPC サーバーの実装。</p>
+          <span class="work__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="work reveal" href="#">
+          <span class="work__tag">Kubernetes</span>
+          <h3 class="work__title">Homelab on Kubernetes</h3>
+          <p class="work__text">自宅サーバーを Kubernetes で構成管理し、宣言的に運用している環境。</p>
+          <span class="work__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="work reveal" href="#">
+          <span class="work__tag">HTML / Next.js</span>
+          <h3 class="work__title">レンタカー予約サイト</h3>
+          <p class="work__text">予約フローと管理ダッシュボードを備えた、実運用想定の Web アプリケーション。</p>
+          <span class="work__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="work reveal" href="#">
+          <span class="work__tag">Go</span>
+          <h3 class="work__title">CLI Todo App</h3>
+          <p class="work__text">ターミナルで完結するタスク管理ツール。小さく作って長く使うための実験。</p>
+          <span class="work__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <p class="section__label reveal">Contact</p>
+      <h2 class="section__title reveal">お問い合わせ</h2>
+      <p class="contact__lead reveal">
+        お仕事のご相談、技術的な質問など、お気軽にご連絡ください。
+      </p>
+      <div class="contact__actions reveal">
+        <a class="btn btn--primary" href="mailto:example@example.com">メールを送る</a>
+        <a class="btn btn--ghost" href="https://github.com/kodaikumatani" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__copy">&copy; <span id="year">2026</span> Kodai Kumatani</p>
+    <a class="footer__top" href="#hero">Back to top &uarr;</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- preview smoke test -->
