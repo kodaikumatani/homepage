@@ -2,6 +2,8 @@
 
 静的な個人ホームページ。HTML / CSS / JavaScript のみで構成され、ビルド不要で GitHub Pages から配信されます。
 
+公開先: **https://kodaikumatani.github.io/homepage/**
+
 ## 構成
 
 ```
