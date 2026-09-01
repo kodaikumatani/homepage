@@ -108,3 +108,4 @@ gh pr merge --squash --delete-branch
 - `index.html` の `mailto:example@example.com` — 連絡先メールアドレス
 - Works セクションの `href="#"` — 各リポジトリや記事の URL
 - About / Skills の文面
+
